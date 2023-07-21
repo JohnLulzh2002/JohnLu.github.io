@@ -1,4 +1,5 @@
 module.exports = {
+	dest: './dist',
 	title: '鲁哲豪 个人网站',
 	description: 'Just playing around',
 	// publicPath:"",
