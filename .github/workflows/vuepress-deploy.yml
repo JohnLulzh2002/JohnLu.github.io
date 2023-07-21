@@ -13,6 +13,6 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: JohnLulzh2002/JohnLulzh2002.github.io
         TARGET_BRANCH: gh_pages
-        BUILD_SCRIPT: npm i && npm run build
-        BUILD_DIR: dist/
+        BUILD_SCRIPT: yarn && yarn build
+        BUILD_DIR: dist
         COMMIT_MESSAGE: Auto deploy from Github Actions
