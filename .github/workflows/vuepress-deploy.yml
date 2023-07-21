@@ -5,13 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
 
     - name: vuepress-deploy
-      uses: JohnLulzh2002/JohnLulzh2002.github.io@master
+      uses: JohnLulzh2002/JohnLulzh2002.github.io@main
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: JohnLulzh2002/JohnLulzh2002.github.io
         TARGET_BRANCH: gh_pages
         BUILD_SCRIPT: npm i && npm run build
         BUILD_DIR: dist/
+        COMMIT_MESSAGE: Auto deploy from Github Actions
